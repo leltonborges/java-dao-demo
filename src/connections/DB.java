@@ -24,7 +24,7 @@ public class DB {
 			Properties props = loadProperties();
 			String url = props.getProperty("url");
 			cnn = DriverManager.getConnection(url, props);
-			JOptionPane.showMessageDialog(null, "sucesso");
+			//JOptionPane.showMessageDialog(null, "sucesso");
 
 			}catch(SQLException e) {
 				throw new DbException(e.getMessage());
